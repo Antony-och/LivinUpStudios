@@ -428,8 +428,6 @@ if (gallery) {
   const countText = document.getElementById('gc');
   const lightbox = document.getElementById('lb');
   const lightboxContent = document.getElementById('lbc');
-  const lightboxIndex = document.getElementById('lbi');
-
   const categories = ['All', ...new Set(G.map((item) => item.category))];
 
   const draw = () => {
@@ -466,9 +464,10 @@ if (gallery) {
             `).join('')}
           </div>
           <div class="gallery-meta-row">
-            <button class="btn w2" type="button" data-lightbox-prev="true">Previous</button>
+            <button class="btn lightbox-btn lightbox-btn--ghost" type="button" data-lightbox-prev="true">Previous</button>
             <span>${activeShotIndex + 1} / ${shots.length}</span>
-            <button class="btn w2" type="button" data-lightbox-next="true">Next</button>
+            <button class="btn lightbox-btn lightbox-btn--ghost" type="button" data-lightbox-next="true">Next</button>
+            <button class="btn lightbox-btn lightbox-btn--solid" type="button" data-lightbox-close="true">Close</button>
           </div>
           <div class="gallery-caption">
             <h3>${item.title}</h3>
@@ -479,9 +478,8 @@ if (gallery) {
 
       lightboxContent.querySelector('[data-lightbox-prev]').addEventListener('click', () => show(activeIndex, activeShotIndex - 1));
       lightboxContent.querySelector('[data-lightbox-next]').addEventListener('click', () => show(activeIndex, activeShotIndex + 1));
+      lightboxContent.querySelector('[data-lightbox-close]').addEventListener('click', () => lightbox.close());
     }
-
-    if (lightboxIndex) lightboxIndex.textContent = `${activeIndex + 1} of ${list.length}`;
   };
 
   filterBar.addEventListener('click', (event) => {

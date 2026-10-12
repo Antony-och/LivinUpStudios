@@ -1,0 +1,165 @@
+.services-main { background: #fffefa; }
+.services-intro { position: relative; isolation: isolate; overflow: hidden; padding: 23px clamp(24px, 7vw, 82px) 25px; background-color: #f6f3e9; background-image: radial-gradient(ellipse at 15% 50%, rgba(171,147,99,.12), transparent 41%), repeating-linear-gradient(3deg, rgba(86,68,42,.02) 0, rgba(86,68,42,.02) 1px, transparent 1px, transparent 5px); }
+.services-inner { position: relative; z-index: 1; }
+.services-intro > .services-watermark { position: absolute; z-index: 0; top: 49%; right: -38px; width: 170px; opacity: .16; transform: translateY(-50%); }
+.services-eyebrow { margin: 0 0 4px; color: #927143; font: 600 13px/1.1 var(--display); letter-spacing: .16em; text-align: center; text-transform: uppercase; }
+.services-intro h1 { max-width: none; margin: 0 auto 21px; font: 500 clamp(29px, 3.1vw, 39px)/.98 var(--display); letter-spacing: .006em; text-align: center; text-transform: uppercase; }
+.services-intro h1 span { display: inline-block; }
+.production-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+.production-card { position: relative; display: flex; min-width: 0; min-height: 145px; overflow: hidden; background: #f0ecdf; box-shadow: 0 1px 0 rgba(48, 38, 22, .1); transition: transform .2s ease, box-shadow .2s ease; }
+.production-card:hover { transform: translateY(-2px); box-shadow: 0 5px 15px rgba(47, 37, 22, .12); }
+.production-card--feature { background: #cdb476; }
+.production-art { position: relative; display: grid; flex: 0 0 35%; min-width: 104px; place-items: center; overflow: hidden; background: #e4d8b8; }
+.production-card--feature .production-art { background: #b7944e; }
+.production-art svg { display: block; width: min(96%, 146px); height: auto; max-height: 137px; filter: drop-shadow(0 2px 0 rgba(35, 27, 18, .13)); }
+.production-copy { display: flex; flex: 1; min-width: 0; flex-direction: column; align-items: flex-start; justify-content: center; padding: 11px 13px 10px; }
+.service-number { margin: 0 0 3px; color: #8a6b36; font: 600 10px/1 var(--display); letter-spacing: .15em; text-transform: uppercase; }
+.production-card--feature .service-number { color: #5e4725; }
+.production-copy h2 { margin: 0 0 4px; color: #171512; font: 700 clamp(18px, 1.9vw, 23px)/.95 var(--display); text-transform: uppercase; }
+.production-copy > p:not(.service-number) { margin: 0 0 6px; color: #24211c; font: 400 14px/1.13 var(--display); }
+.service-action {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  margin-top: auto;
+  padding: 2px 0;
+  border: 0;
+  color: #211b14;
+  background: transparent;
+  font: 600 14px/1 var(--display);
+  text-align: left;
+  text-transform: uppercase;
+  appearance: none;
+  cursor: pointer;
+}
+.service-action span { color: #876632; font: 600 15px/1 var(--body); transition: transform .18s ease; }
+.service-action:hover { color: #84632d; text-decoration: underline; text-underline-offset: 3px; }
+.service-action:hover span { transform: translate(2px, -2px); }
+.services-lower { display: grid; grid-template-columns: 1fr 1fr; align-items: stretch; background: #fffefa; }
+.process-panel, .packages-panel { min-width: 0; padding: 20px clamp(21px, 4vw, 42px) 22px; }
+.process-panel { background: #fffefa; }
+.packages-panel { background-color: #f6f3e9; background-image: radial-gradient(ellipse at 80% 44%, rgba(171,147,99,.10), transparent 45%), repeating-linear-gradient(3deg, rgba(86,68,42,.018) 0, rgba(86,68,42,.018) 1px, transparent 1px, transparent 5px); }
+.services-lower .services-eyebrow { margin-bottom: 4px; text-align: left; font-size: 11px; }
+.lower-heading { margin: 0 0 13px; font: 700 clamp(22px, 2.35vw, 30px)/.95 var(--display); text-transform: uppercase; }
+.process-steps { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 0; margin: 16px 0 11px; padding: 0; list-style: none; }
+.process-step { position: relative; display: flex; min-width: 0; flex-direction: column; align-items: center; gap: 5px; color: #211d18; text-align: center; }
+.process-step:not(:last-child)::after { position: absolute; top: 21px; right: -9px; content: '→'; color: #9d7d43; font: 600 18px/1 var(--display); }
+.process-step svg { display: block; width: 47px; height: 47px; }
+.process-step span { font: 600 15px/.94 var(--display); text-transform: uppercase; }
+.process-note { margin: 10px 0 0; color: #62584a; font: 400 14px/1.1 var(--display); text-align: center; }
+.package-grid { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 8px; }
+.package-card { display: flex; min-width: 0; min-height: 166px; flex-direction: column; padding: 9px 9px 8px; border: 1px solid rgba(96,76,41,.32); border-radius: 3px; background: #fffefa; box-shadow: 0 2px 6px rgba(51,40,23,.07); }
+.package-card--feature { border-color: rgba(116,88,42,.6); background: #f3ead3; }
+.package-top { display: flex; align-items: flex-start; gap: 6px; margin: -9px -9px 7px; padding: 7px 8px 6px; background: #c3a563; }
+.package-card--feature .package-top { background: #ad8749; }
+.package-top > span { display: grid; flex: 0 0 20px; width: 20px; height: 20px; place-items: center; border: 1px solid rgba(39,31,20,.43); border-radius: 50%; font: 600 10px/1 var(--display); }
+.package-top h3 { margin: 0; font: 700 clamp(14px, 1.4vw, 17px)/.9 var(--display); text-transform: uppercase; }
+.package-card > p { margin: 0 0 5px; font: 400 12px/1.08 var(--display); }
+.package-card ul { display: grid; gap: 2px; margin: 0 0 9px; padding-left: 13px; font: 400 11px/1.05 var(--display); }
+.package-card li::marker { color: #9a753b; }
+.package-card > a { display: inline-flex; align-items: center; justify-content: space-between; gap: 4px; margin-top: auto; padding-top: 5px; color: #352816; font: 600 11px/1 var(--display); text-decoration: none; text-transform: uppercase; }
+.package-card > a:hover { color: #83622e; text-decoration: underline; text-underline-offset: 2px; }
+
+@media (min-width: 1150px) {
+  .production-card { min-height: 157px; }
+  .production-copy { padding-right: 16px; padding-left: 15px; }
+  .production-copy > p:not(.service-number) { font-size: 15px; }
+  .package-card { min-height: 180px; padding: 10px; }
+  .package-top { margin: -10px -10px 8px; padding: 8px 9px; }
+}
+@media (max-width: 900px) {
+  .production-grid { gap: 9px; }
+  .production-card { min-height: 152px; }
+  .production-art { flex-basis: 33%; min-width: 94px; }
+  .production-copy { padding: 9px 10px; }
+  .production-copy > p:not(.service-number) { font-size: 13px; }
+  .services-lower { grid-template-columns: 1fr; }
+  .process-panel, .packages-panel { padding-right: 34px; padding-left: 34px; }
+  .package-card { min-height: 160px; }
+}
+@media (max-width: 640px) {
+  .services-intro { padding: 22px 18px 24px; }
+  .services-intro h1 { max-width: 490px; margin-bottom: 16px; font-size: clamp(30px, 7.4vw, 40px); }
+  .production-grid { grid-template-columns: 1fr; gap: 9px; }
+  .production-card { min-height: 143px; }
+  .production-art { flex-basis: 34%; min-width: 112px; }
+  .production-art svg { width: min(98%, 140px); }
+  .production-copy { padding: 10px 14px; }
+  .production-copy h2 { font-size: clamp(20px, 5.1vw, 24px); }
+  .production-copy > p:not(.service-number) { font-size: 15px; }
+  .service-action { font-size: 14px; }
+  .services-lower { grid-template-columns: 1fr; }
+  .process-panel, .packages-panel { padding: 21px 19px 22px; }
+  .lower-heading { font-size: 26px; }
+  .process-steps { grid-template-columns: repeat(2,minmax(0,1fr)); row-gap: 14px; margin-top: 13px; }
+  .process-step:last-child { grid-column: 1 / -1; }
+  .process-step:not(:last-child)::after { display: none; }
+  .process-step span { font-size: 16px; }
+  .package-grid { gap: 7px; }
+  .package-card { min-height: 175px; padding: 8px; }
+  .package-top { margin: -8px -8px 7px; padding: 7px; }
+  .package-top h3 { font-size: 15px; }
+  .package-card > p { font-size: 12px; }
+  .package-card ul { font-size: 11px; }
+  .package-card > a { font-size: 10px; }
+}
+@media (max-width: 390px) {
+  .production-card { min-height: 150px; }
+  .production-art { flex-basis: 32%; min-width: 100px; }
+  .production-copy { padding-right: 10px; padding-left: 10px; }
+  .production-copy h2 { font-size: 19px; }
+  .production-copy > p:not(.service-number) { font-size: 14px; }
+  .package-grid { grid-template-columns: 1fr; }
+  .package-card { min-height: auto; padding: 10px; }
+  .package-top { margin: -10px -10px 8px; padding: 8px 10px; }
+  .package-top h3 { font-size: 17px; }
+  .package-card > p, .package-card ul { font-size: 14px; }
+  .package-card > a { font-size: 12px; }
+}
+
+@media (min-width: 761px) and (max-width: 1020px) {
+  .services-route .site-footer .footer-main { grid-template-columns: 1.5fr 1fr .82fr 1fr; gap: clamp(12px, 2vw, 20px); }
+  .services-route .footer-brand { grid-row: auto; }
+  .services-route .brand--footer .brand-mark { width: 47px; height: 50px; }
+  .services-route .brand--footer .brand-wordmark span:first-child { font-size: 28px; }
+  .services-route .brand--footer .brand-wordmark span:last-child { font-size: 12px; }
+  .services-route .footer-column h2 { font-size: 18px; }
+  .services-route .footer-column > a, .services-route .footer-column > p { font-size: 15px; }
+}
+
+
+/* The current studio workflow is four stages: Listen, Plan, Create, Share. */
+.process-steps { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+@media (max-width: 640px) {
+  .process-step:last-child { grid-column: auto; }
+}
+
+
+/* Services dialog art reuses each card's existing inline SVG illustration. */
+.services-dialog-art {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  padding: clamp(22px, 5vw, 46px);
+  background:
+    radial-gradient(circle at 22% 18%, rgba(255, 255, 255, .28), transparent 35%),
+    repeating-linear-gradient(135deg, rgba(43, 33, 24, .035) 0 1px, transparent 1px 11px),
+    var(--service-art-base, #b7944e);
+}
+.services-dialog-art svg {
+  position: relative;
+  display: block;
+  width: min(96%, 310px);
+  height: auto;
+  max-height: 320px;
+  filter: drop-shadow(0 8px 10px rgba(33, 29, 25, .19));
+}
+.services-route .service-detail-dialog .home-service-dialog__image-note {
+  right: 14px;
+  bottom: 14px;
+}
+@media (max-width: 680px) {
+  .services-dialog-art { padding: 16px; }
+  .services-dialog-art svg { width: min(74%, 155px); max-height: 145px; }
+}

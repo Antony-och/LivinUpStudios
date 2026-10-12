@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" role="img" aria-label="Livin Up faceted jewel">
+  <path d="M50 3 94 39 72 59 83 96 50 77 17 96 28 59 6 39Z" fill="#2b2118"/>
+  <path d="M50 8 87 38 50 55 14 38Z" fill="#b28748"/>
+  <path d="m50 8 0 47 37-17Z" fill="#927344"/>
+  <path d="M14 38 50 55 29 61 9 40Z" fill="#6b6137"/>
+  <path d="m87 38-37 17 21 6 20-21Z" fill="#403720"/>
+  <path d="m50 55-21 6 21 13 21-13Z" fill="#8c332b"/>
+  <path d="m29 61 21 13-1 17-28-1Z" fill="#9c7940"/>
+  <path d="m71 61-21 13 1 17 28-1Z" fill="#4f603d"/>
+  <path d="M50 55v19" stroke="#e1c48a" stroke-width="2"/>
+  <path d="m50 4 44 35-22 20 11 37-33-19-33 19 11-37L6 39Z" fill="none" stroke="#2b2118" stroke-width="3" stroke-linejoin="round"/>
+</svg>
