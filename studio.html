@@ -1,112 +1,130 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <title>Studio | Livin Up</title>
-  <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f6f3e8">
+  <meta name="description" content="Learn about Livin Up Productions — a creative studio built around art, culture and people. We ask first, credit fairly and work with local crews.">
+  <title>Studio — Livin Up Productions</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+  <script src="/main.js" defer></script>
 </head>
-<body data-page="studio">
-  <div class="frame">
-    <!-- SITE HEADER / NAVIGATION -->
-    <header class="fnav" id="fnav">
-      <a class="fb" href="index.html" aria-label="Livin Up home"><img data-markimg alt=""><b>LIVIN UP</b></a>
-      <button class="burger" id="bg" type="button" aria-expanded="false" aria-controls="fl">Menu</button>
-      <nav id="fl" aria-label="Main">
-        <a href="index.html">Home</a>
-        <a href="work.html">Work</a>
-        <a href="services.html">Services</a>
-        <a href="gallery.html">Gallery</a>
-        <a href="studio.html">Studio</a>
-        <a class="cta" href="contact.html">Partner with us</a>
+<body class="studio-route">
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <div class="site-sheet">
+    <header class="site-header" id="top">
+      <a class="brand" href="/" aria-label="Livin Up Productions home">
+        <svg class="brand-mark" viewBox="0 0 100 100" role="img" aria-labelledby="studio-logo-title">
+          <title id="studio-logo-title">Faceted Livin Up jewel</title>
+          <path d="M50 3 94 39 72 59 83 96 50 77 17 96 28 59 6 39Z" fill="#2b2118"/>
+          <path d="M50 8 87 38 50 55 14 38Z" fill="#b28748"/>
+          <path d="m50 8 0 47 37-17Z" fill="#927344"/>
+          <path d="M14 38 50 55 29 61 9 40Z" fill="#6b6137"/>
+          <path d="m87 38-37 17 21 6 20-21Z" fill="#403720"/>
+          <path d="m50 55-21 6 21 13 21-13Z" fill="#8c332b"/>
+          <path d="m29 61 21 13-1 17-28-1Z" fill="#9c7940"/>
+          <path d="m71 61-21 13 1 17 28-1Z" fill="#4f603d"/>
+          <path d="M50 55v19" stroke="#e1c48a" stroke-width="2"/>
+          <path d="m50 4 44 35-22 20 11 37-33-19-33 19 11-37L6 39Z" fill="none" stroke="#2b2118" stroke-width="3" stroke-linejoin="round"/>
+        </svg>
+        <span class="brand-wordmark"><span>LIVIN UP</span><span>PRODUCTIONS</span></span>
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation" aria-label="Open navigation">
+        <span></span><span></span>
+      </button>
+      <nav class="main-nav" id="primary-navigation" aria-label="Main navigation">
+        <div class="nav-links">
+          <a href="/about/">About</a>
+          <a href="/services/">Services</a>
+          <a href="/portfolio/">Portfolio</a>
+          <a href="/contact/">Contact</a>
+        </div>
+        <a class="nav-cta" href="/contact/">Contact us <span aria-hidden="true">↗</span></a>
       </nav>
     </header>
 
-    <!-- PAGE MAIN CONTENT -->
-    <main class="main">
-      <!-- PAGE INTRO -->
-      <section class="page-intro" id="studio-intro">
-        <h2>A studio for stories that belong to the people who live them</h2>
-        <p>Livin Up is a creative studio for brands rooted in art, culture and people. We shoot, film and design alongside the communities we serve.</p>
+    <main id="main-content" class="studio-main" data-page="studio">
+      <section class="studio-intro" aria-labelledby="studio-heading">
+        <p class="studio-eyebrow">The studio</p>
+        <h1 id="studio-heading">A studio for stories that belong to the people who live them</h1>
+        <p class="studio-lede">Livin Up is a creative studio for brands rooted in art, culture and people. We shoot, film and design alongside the communities we serve.</p>
       </section>
 
-      <!-- STUDIO STORY / VALUES -->
-      <section class="page-shell" id="studio-story">
-        <div class="sh">
-          <div>
-            <h2 style="text-align:left">A studio built around people</h2>
-            <p class="lead2">We ask before we photograph, credit before we publish, and work with local makers, printers and crews wherever possible. That means the story feels honest, useful and owned by the community it represents.</p>
-            <a class="btn" href="work.html">See our work</a>
-          </div>
-          <div class="sl"><div><img data-logo alt="Livin Up"></div></div>
-        </div>
-
-        <div class="pil">
-          <article class="p1"><h3>Art</h3><p>Craft, colour and pattern lead every project. We treat them as a source of ideas, never decoration.</p></article>
-          <article class="p2"><h3>Culture</h3><p>We work in the language, rhythm and context of the communities behind the story.</p></article>
-          <article class="p3"><h3>People</h3><p>Every project starts with who it serves. We work with local makers, crews and printers.</p></article>
+      <section class="studio-section" id="studio-story" aria-labelledby="studio-story-heading">
+        <div class="studio-pillars">
+          <article class="studio-pillar">
+            <h2 class="studio-pillar-heading">Art</h2>
+            <p>Craft, colour and pattern lead every project. We treat them as a source of ideas, never decoration.</p>
+          </article>
+          <article class="studio-pillar">
+            <h2 class="studio-pillar-heading">Culture</h2>
+            <p>We work in the language, rhythm and context of the communities behind the story.</p>
+          </article>
+          <article class="studio-pillar">
+            <h2 class="studio-pillar-heading">People</h2>
+            <p>Every project starts with who it serves. We work with local makers, crews and printers.</p>
+          </article>
         </div>
       </section>
 
-      <!-- WORKING PRINCIPLES -->
-      <section class="page-shell" id="studio-principles">
-        <h2>How we work</h2>
-        <ul class="cm">
+      <section class="studio-section studio-principles" id="studio-principles" aria-labelledby="principles-heading">
+        <p class="studio-eyebrow">How we work</p>
+        <h2 id="principles-heading">Built around honesty</h2>
+        <ul class="studio-principles-list">
           <li><b>We ask first.</b> Permission comes before every portrait and every film.</li>
           <li><b>We credit and pay.</b> The people in front of the lens are named and paid for their time.</li>
           <li><b>We work locally.</b> Local crews, printers and makers wherever we can.</li>
           <li><b>We hand it all over.</b> You keep the files, the licence and the story.</li>
         </ul>
-      </section>
-
-      <!-- TEAM SECTION -->
-      <section class="page-shell" id="studio-team">
-        <h2>The team</h2>
-        <div class="team" id="team"></div>
+        <a class="story-link" href="/portfolio/">See our work <span aria-hidden="true">→</span></a>
       </section>
     </main>
 
-    <!-- SITE FOOTER -->
-    <footer id="site-footer">
-      <div class="footer-brand">
-        <img class="footer-brand-mark" src="img/livingup_logo.png" alt="Livin Up logo">
-        <p class="brand-line">Art, culture, and people — shaped into stories that feel lived in.</p>
-        <a class="footer-cta" href="contact.html">Book a discovery call</a>
-      </div>
-
-      <div class="footer-grid">
-        <div class="footer-meta">
-          <h4>Follow us</h4>
-          <div class="soc">
-            <a href="https://www.facebook.com" target="_blank" rel="noreferrer" aria-label="Facebook"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a>
-            <a href="https://www.instagram.com/livinupke/" target="_blank" rel="noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
-            <a href="https://www.youtube.com" target="_blank" rel="noreferrer" aria-label="YouTube"><i class="fa-brands fa-youtube" aria-hidden="true"></i></a>
-            <a href="https://www.linkedin.com" target="_blank" rel="noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></a>
+    <footer class="site-footer" id="inquiry">
+      <div class="footer-main">
+        <div class="footer-brand">
+          <a class="brand brand--footer" href="/" aria-label="Livin Up Productions home">
+            <svg class="brand-mark" viewBox="0 0 100 100" aria-hidden="true">
+              <path d="M50 3 94 39 72 59 83 96 50 77 17 96 28 59 6 39Z" fill="#2b2118"/><path d="M50 8 87 38 50 55 14 38Z" fill="#b28748"/><path d="m50 8 0 47 37-17Z" fill="#927344"/><path d="M14 38 50 55 29 61 9 40Z" fill="#6b6137"/><path d="m87 38-37 17 21 6 20-21Z" fill="#403720"/><path d="m50 55-21 6 21 13 21-13Z" fill="#8c332b"/><path d="m29 61 21 13-1 17-28-1Z" fill="#9c7940"/><path d="m71 61-21 13 1 17 28-1Z" fill="#4f603d"/>
+            </svg>
+            <span class="brand-wordmark"><span>LIVIN UP</span><span>PRODUCTIONS</span></span>
+          </a>
+          <p>Art, culture, and people —<br>shaped into stories that feel<br>lived in.</p>
+        </div>
+        <div class="footer-column footer-social">
+          <h2>Follow us</h2>
+          <div class="social-links">
+            <a href="https://www.facebook.com/" aria-label="Facebook" target="_blank" rel="noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13.5 21v-8.2h2.8l.4-3.2h-3.2V7.5c0-.9.3-1.5 1.6-1.5h1.7V3.1c-.3 0-1.3-.1-2.5-.1-2.5 0-4.2 1.5-4.2 4.3v2.4H7.3v3.2h2.8V21z" fill="currentColor"/></svg></a>
+            <a href="https://www.instagram.com/livinupke/" aria-label="Instagram" target="_blank" rel="noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.2" y="3.2" width="17.6" height="17.6" rx="5" fill="none" stroke="currentColor" stroke-width="2.5"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2.3"/><circle cx="17.8" cy="6.7" r="1.2" fill="currentColor"/></svg></a>
+            <a href="https://www.youtube.com/" aria-label="YouTube" target="_blank" rel="noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.4 7a3 3 0 0 0-2.1-2.1C19.5 4.4 12 4.4 12 4.4s-7.5 0-9.3.5A3 3 0 0 0 .6 7 31 31 0 0 0 .1 12a31 31 0 0 0 .5 5 3 3 0 0 0 2.1 2.1c1.8.5 9.3.5 9.3.5s7.5 0 9.3-.5a3 3 0 0 0 2.1-2.1 31 31 0 0 0 .5-5 31 31 0 0 0-.5-5zM9.7 15.4V8.6L15.9 12z" fill="currentColor"/></svg></a>
+            <a href="https://www.linkedin.com/" aria-label="LinkedIn" target="_blank" rel="noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5.3 8.4H2v13.3h3.3zM3.7 2.3a1.9 1.9 0 1 0 0 3.8 1.9 1.9 0 0 0 0-3.8M22 13.3c0-4-2.1-5.8-4.9-5.8a4.2 4.2 0 0 0-3.8 2.1V8.4H10v13.3h3.3v-7.4c0-2 .4-3.9 2.8-3.9s2.4 2.2 2.4 4v7.3H22z" fill="currentColor"/></svg></a>
           </div>
         </div>
-
-        <div class="footer-meta">
-          <h4>Explore</h4>
-          <nav class="footer-links" aria-label="Footer navigation">
-            <a href="index.html">About</a>
-            <a href="work.html">Portfolio</a>
-            <a href="services.html">Services</a>
-            <a href="studio.html">Blog</a>
-            <a href="contact.html">FAQs</a>
-          </nav>
+        <div class="footer-column">
+          <h2>Explore</h2>
+          <a href="/about/">About</a>
+          <a href="/portfolio/">Portfolio</a>
+          <a href="/services/">Services</a>
+          <a href="/contact/">Contact</a>
+          <a href="mailto:hello@livinup.com?subject=Frequently%20asked%20questions">FAQs</a>
+        </div>
+        <div class="footer-column footer-contact">
+          <h2>Contact</h2>
+          <p>Plot 4A, Elevation Way,<br>Nairobi</p>
+          <a href="tel:+254700000000">+254 700 000 000</a>
+          <a href="mailto:hello@livinup.com">hello@livinup.com</a>
         </div>
       </div>
-
-      <div class="footer-contact">
-        <h4>Contact</h4>
-        <div class="contact-item"><i class="fa-solid fa-location-dot" aria-hidden="true"></i><a href="https://maps.google.com" target="_blank" rel="noreferrer">Map area ini<br>Elercation</a></div>
-        <div class="contact-item"><i class="fa-solid fa-phone" aria-hidden="true"></i><a href="tel:+254700000000">+254 700 000 000</a></div>
-        <div class="contact-item"><i class="fa-solid fa-envelope" aria-hidden="true"></i><a href="mailto:hello@livinup.com">hello@livinup.com</a></div>
+      <div class="footer-legal">
+        <span>© 2026 Livin Up Productions. All rights reserved.</span><span class="legal-divider" aria-hidden="true">|</span>
+        <a href="mailto:hello@livinup.com?subject=Legal%20information">Legal</a><span class="legal-divider" aria-hidden="true">|</span>
+        <a href="mailto:hello@livinup.com?subject=Privacy%20policy">Privacy policy</a><span class="legal-divider" aria-hidden="true">|</span>
+        <a href="mailto:hello@livinup.com?subject=Terms">Terms</a>
       </div>
     </footer>
   </div>
-  <script src="script.js"></script>
 </body>
 </html>
